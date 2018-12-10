@@ -1,0 +1,210 @@
+@font-face {
+  font-family: "futurist";
+  src: url('./assets/ForgottenFuturistCollegeRegular.ttf')
+}
+
+@font-face {
+  font-family: "FuturaRegular";
+  src: url('./assets/FuturaTEERegular.ttf')
+}
+
+.App {
+  text-align: center;
+  font-family: futurist;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+  }
+  .left, .right {
+    height: 100%;
+    width: 50%;
+  }
+  .left {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #0038A8;
+  }
+  .right {
+    background: #0038A8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .name {
+    display: flex;
+    flex-direction: column;
+  }
+  .name > .handle {
+    font-size: 80px;
+  }
+  .name > .tagline {
+    font-size: 20px;
+  }
+  .name > .title {
+    font-size: 25px;
+  }
+  .image > img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; 
+  }
+  .image .name {
+    display: none;
+  }
+  .links > div > span {
+    margin: 30px 20px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .links > div {
+    margin: 30px 20px;
+  }
+
+  .links > div > span.selected {
+    text-decoration: underline;
+  }
+
+  .links > div > span:hover {
+    text-decoration: underline;
+  }
+
+  .hamburg, .mobile-links {
+    display: none;
+  }
+  .profile > .text {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .left {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    color: #0038A8;
+    width: 100%;
+    height: 70px;
+    flex-wrap: wrap;
+  }
+  hr {
+    display: none;
+  }
+  .right {
+    background: #0038A8;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .name {
+    display: none;
+  }
+  .image .name {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 10px;
+    justify-self: flex-start;
+  }
+  .name > .handle {
+    font-size: 50px;
+    text-align: left;
+  }
+  .name > .title {
+    font-size: 15px;
+  }
+  .image {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .image > img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 10px; 
+  }
+  .links {
+    display: none;
+    font-family: 'FuturaRegular';
+  }
+  .name > .tagline {
+    display: none;
+  }
+  .hamburg {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #0038A8;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 40px;
+  }
+  .mobile-links {
+    width: 100%;
+    z-index: 99;
+    background: #ffffff;
+    height: 100px;
+    padding-top: 20px; 
+  }
+  .mobile-links > div > span {
+    margin: 30px 20px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .mobile-links > div {
+    margin: 5px 20px;
+  }
+
+  .mobile-links > div > span:hover, .links > div > span:hover {
+    text-decoration: underline;
+  }
+
+  .mobile-links > div > span.selected {
+    text-decoration: underline;
+  }
+
+  .profile > .text {
+    font-size: 22px;
+  }
+}
+
+.profile {
+  color: #ffffff;
+  width: 80%;
+  height: 90%;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile > .heading {
+  font-size: 40px;
+}
+
+.links > div > span > a, .mobile-links > div > span > a {
+  text-decoration: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
