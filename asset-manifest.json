@@ -1,7 +1,7 @@
 {
   "main.css": "/profile/static/css/main.940a03bd.chunk.css",
-  "main.js": "/profile/static/js/main.f02b5cf8.chunk.js",
-  "main.js.map": "/profile/static/js/main.f02b5cf8.chunk.js.map",
+  "main.js": "/profile/static/js/main.1f18381f.chunk.js",
+  "main.js.map": "/profile/static/js/main.1f18381f.chunk.js.map",
   "static/js/1.2de96761.chunk.js": "/profile/static/js/1.2de96761.chunk.js",
   "static/js/1.2de96761.chunk.js.map": "/profile/static/js/1.2de96761.chunk.js.map",
   "runtime~main.js": "/profile/static/js/runtime~main.92700b96.js",
@@ -10,6 +10,6 @@
   "static/media/ema.png": "/profile/static/media/ema.31ef00bb.png",
   "static/media/App.css": "/profile/static/media/ForgottenFuturistCollegeRegular.0dae820b.ttf",
   "index.html": "/profile/index.html",
-  "precache-manifest.52f06283b7e1b2993ba942ae6a31b61a.js": "/profile/precache-manifest.52f06283b7e1b2993ba942ae6a31b61a.js",
+  "precache-manifest.573c206e7a2f48a0bad2ddeaaabd6064.js": "/profile/precache-manifest.573c206e7a2f48a0bad2ddeaaabd6064.js",
   "service-worker.js": "/profile/service-worker.js"
 }
