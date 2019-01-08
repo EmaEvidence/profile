@@ -1,15 +1,15 @@
 {
-  "main.css": "/profile/static/css/main.fbaaa5ed.chunk.css",
-  "main.js": "/profile/static/js/main.400094a4.chunk.js",
-  "main.js.map": "/profile/static/js/main.400094a4.chunk.js.map",
-  "static/js/1.e1a55374.chunk.js": "/profile/static/js/1.e1a55374.chunk.js",
-  "static/js/1.e1a55374.chunk.js.map": "/profile/static/js/1.e1a55374.chunk.js.map",
+  "main.css": "/profile/static/css/main.52a4170d.chunk.css",
+  "main.js": "/profile/static/js/main.69fa87bb.chunk.js",
+  "main.js.map": "/profile/static/js/main.69fa87bb.chunk.js.map",
+  "static/js/1.0b56793c.chunk.js": "/profile/static/js/1.0b56793c.chunk.js",
+  "static/js/1.0b56793c.chunk.js.map": "/profile/static/js/1.0b56793c.chunk.js.map",
   "runtime~main.js": "/profile/static/js/runtime~main.92700b96.js",
   "runtime~main.js.map": "/profile/static/js/runtime~main.92700b96.js.map",
-  "static/css/main.fbaaa5ed.chunk.css.map": "/profile/static/css/main.fbaaa5ed.chunk.css.map",
+  "static/css/main.52a4170d.chunk.css.map": "/profile/static/css/main.52a4170d.chunk.css.map",
   "static/media/ema.png": "/profile/static/media/ema.31ef00bb.png",
-  "static/media/App.css": "/profile/static/media/ForgottenFuturistCollegeRegular.0dae820b.ttf",
+  "static/media/App.css": "/profile/static/media/FuturaTEERegular.6901c65d.ttf",
   "index.html": "/profile/index.html",
-  "precache-manifest.6ce713fd1486a3bf25aaf597e1d7b928.js": "/profile/precache-manifest.6ce713fd1486a3bf25aaf597e1d7b928.js",
+  "precache-manifest.4958c097a6253544e09663dcfc97ce13.js": "/profile/precache-manifest.4958c097a6253544e09663dcfc97ce13.js",
   "service-worker.js": "/profile/service-worker.js"
 }
