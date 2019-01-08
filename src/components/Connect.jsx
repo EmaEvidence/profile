@@ -4,38 +4,111 @@ class Connect extends Component {
   constructor(props){
     super(props);
     this.state = {
-      bio: '',
-      defaultBio: 'Welcome, I am Emmanuel Alabi. You can call me ea. I am a fullstack Solution Provider(Software Engineer) with years of experience providing full stack web Solutions using Javascript and Nodejs. I follow TDD principles while programming and ensure that my code is properly optimised. I have a good eye for design and I can convert a design/mockup into an application. I am open to new ideas and a quick learner. I am a team player with great stakeholder management skills. If I am not coding, I am surfing the internet for Innovative Ideas, spending time with family, drawing or watching Sci Fi movies at play speed of 2. I also like passing down what I have learnt over time through direct mentorship. Master the logic, for languages are tools'
+      email: '',
+      firstname: '',
+      lastname: '',
+      message: ''
     };
-    this.writeBio = this.writeBio.bind(this);
+    this.onChange = this.onChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  componentDidMount() {
-    this.writeBio();
+  onChange(event) {
+    this.setState({
+      [event.target.name]: event.target.value 
+    });
   }
 
-  writeBio() {
-    const { defaultBio } = this.state;
-    let count = 0;
-    const write = setInterval(() => {
-      let bio = this.state.bio;
-      bio += defaultBio[count];
-      if (!defaultBio[count]) {
-        return clearInterval(write);
-      }
-      this.setState({
-        bio
-      });
-      count += 1;
-    }, 100)
+
+  handleSubmit(event) {
+    event.preventDefault();
+    console.log(this.state);
   }
 
   render() {
+    const {
+      firstname,
+      lastname,
+      message,
+      email
+    } = this.state;
     return (
       <div className="profile">
         <span className="heading">Connect</span>
         <div className="text">
-          {this.state.bio}
+        <div>
+          <span className="form-header">Send a Mail</span>
+          <div className="form-wrapper">
+            <form
+              className="form"
+              // onSubmit={this.handleSubmit}
+              id="gform"
+              method="POST"
+              action="https://script.google.com/macros/s/AKfycbzrLc48y0iVAmaHfp8LXE_3-sVECIR7PJtgg5sadQ/exec"
+            >
+              <div className="form-group">
+                <input
+                  type="text"
+                  placeholder="First Name"
+                  name='firstname'
+                  value={firstname}
+                  onChange={this.onChange}
+                  required
+                />
+                <input
+                  type="text"
+                  placeholder="Last Name"
+                  name='lastname'
+                  value={lastname}
+                  onChange={this.onChange}
+                  required
+                />
+              </div>
+              <div className="form-group">
+                <input
+                  type="email"
+                  placeholder="Email"
+                  name='email'
+                  value={email}
+                  onChange={this.onChange}
+                  required
+                />
+              </div>
+              <div className="form-group">
+                <textarea
+                  placeholder="Enter your message"
+                  name='message'
+                  value={message}
+                  onChange={this.onChange}
+                  required
+                />
+              </div>
+              <div className="form-group">
+                <input type="submit" value="Send" />
+              </div>
+            </form>
+          </div>
+        </div>
+        <div>
+          <div className="connect-links">
+            <span>
+              <a href="https://www.facebook.com/ema.evidence" target="new">Facebook</a>
+            </span>
+            <span>
+              <a href="https://www.linkedin.com/in/emmanuel-alabi-b0b98469/" target="new">LinkedIn</a>
+            </span>
+            <span>
+              <a href="https://twitter.com/EMMANUELALABI" target="new">Twitter</a>
+            </span>
+            <span>
+              <a href="https://www.linkedin.com/in/emmanuel-alabi-b0b98469/" target="new">Github</a>
+            </span>
+            <span>
+              <a href="https://medium.com/@emaevidence" target="new">Blogs</a>
+            </span>
+          </div>
+          <span className="email">Email: emmanuelalabi563@gmail.com</span>
+        </div>
         </div>
       </div>
     );

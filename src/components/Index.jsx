@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, withRouter } from 'react-router-dom';
 import ema from '../assets/ema.png';
 import Profile from './Profile';
 import Blogs from './Blogs';
@@ -17,11 +17,18 @@ class Index extends Component {
       menuState: false,
     };
     this.toggleMenu = this.toggleMenu.bind(this);
+    this.closeMenu = this.closeMenu.bind(this);
   }
 
   toggleMenu() {
     this.setState({
       menuState: !this.state.menuState
+    });
+  }
+
+  closeMenu() {
+    this.setState({
+      menuState: false
     });
   }
 
@@ -45,15 +52,15 @@ class Index extends Component {
           </div>
           <hr />
           <div className="links">
-            <Menu setMenu={this.setMenu} />
+            <Menu {...this.props} />
           </div>
           <div className="hamburg" onClick={this.toggleMenu}>
             {
-              (displayMenu === 'none') ? <i class="fas fa-bars"></i> : <i class="fas fa-times"></i>
+              (displayMenu === 'none') ? <i className="fas fa-bars"></i> : <i className="fas fa-times"></i>
             }
           </div>
-          <div className="mobile-links" style={{ display: displayMenu }}>
-            <Menu setMenu={this.setMenu} />
+          <div className="mobile-links" onMouseLeave={this.closeMenu} onBlur={this.closeMenu} style={{ display: displayMenu }}>
+            <Menu {...this.props} />
           </div>
         </div>
         <div className="right">
@@ -72,4 +79,4 @@ class Index extends Component {
   }
 }
 
-export default Index;
+export default withRouter(Index);

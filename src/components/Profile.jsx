@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { withRouter } from 'react-router-dom';
 
 class Profile extends Component {
   constructor(props){
@@ -11,7 +12,15 @@ class Profile extends Component {
   }
 
   componentDidMount() {
-    this.writeBio();
+    const lastDisplayed = window.localStorage.getItem('displayed');
+    if ((Date.now - lastDisplayed) > 86400000 || lastDisplayed === null) {
+      this.writeBio();
+      window.localStorage.setItem('displayed', Date.now())
+    } else {
+      this.setState({
+        bio: this.state.defaultBio
+      });
+    }
   }
 
   writeBio() {
@@ -42,4 +51,4 @@ class Profile extends Component {
   }
 }
 
-export default Profile;
+export default withRouter(Profile);
