@@ -25,13 +25,13 @@ class Project extends Component {
 
   loadTech(techs) {
     const result = techs.map((tech) => {
-      return <span className="tech-stack">{tech}</span>
+      return <span key={tech} className="tech-stack">{tech}</span>
     })
     return result;
   }
 
   render() {
-    const { skill } = this.props;
+    const { project } = this.props;
     let { display } = this.state;
     return (
       <div
@@ -43,32 +43,32 @@ class Project extends Component {
           <span className="proficiency tech-container">
             <span className="techs">
               {
-                this.loadTech(skill.technologies)
+                this.loadTech(project.technologies)
               }
             </span>
           </span>
           <span className="experience url">
             <span className="value">
-              <a href={skill.url} target="new">
-                {skill.url}
+              <a href={project.url} target="new">
+                {project.url}
               </a>
             </span>
           </span>
           <span className="experience url">
             <span className="value">
-              <a href={skill.repo} target="new">
-                {skill.repo}
+              <a href={project.repo} target="new">
+                {project.repo}
               </a>
             </span>
           </span>
         </div>
         <h1 className="project-logo">
           {
-            skill.name[0].toUpperCase()
+            project.name[0].toUpperCase()
           }
         </h1>
         <div className="details">
-          <span>{skill.name}</span>
+          <span>{project.name}</span>
         </div>
       </div>
     );

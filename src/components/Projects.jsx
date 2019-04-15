@@ -113,8 +113,8 @@ class Projects extends Component {
 
   loadProjects() {
     const { projects } = this.state;
-    return projects.map((skill) => {
-      return (<Project skill={skill} />);
+    return projects.map((project) => {
+      return (<Project key={project.name} project={project} />);
     });
   }
 

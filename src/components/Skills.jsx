@@ -118,8 +118,8 @@ class Skills extends Component {
 
   loadSkills() {
     const { skills } = this.state;
-    return skills.map((skill) => {
-      return (<Skill skill={skill} />);
+    return skills.map((skill, index) => {
+      return (<Skill key={`${skill}${index}`} skill={skill} />);
     });
   }
 
