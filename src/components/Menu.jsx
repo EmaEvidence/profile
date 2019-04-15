@@ -5,18 +5,30 @@ const Menu = (props) => {
   const path = props.location.pathname;
   return(
     <Fragment>
-      <div>
-        <span className={(path === '/') ? "selected" : ''}>
-          <Link to="/">Profile</Link>
+      <div style={{ display: 'flex', justifyContent: 'center'}}>
+        <span>
+          <Link to="/">
+            Profile
+            <span className={(path === '/') ? "selected indicator" : 'indicator'}></span>
+          </Link>
         </span>
-        <span className={(path === '/skills') ? "selected" : ''}>
-          <Link to="/skills">Skills</Link>
+        <span>
+          <Link to="/skills">
+            Skills
+            <span className={(path === '/skills') ? "selected indicator" : 'indicator'}></span>
+          </Link>
         </span>
-        <span className={(path === '/projects') ? "selected" : ''}>
-          <Link to="/projects">Projects</Link>
+        <span>
+          <Link to="/projects">
+            Projects
+            <span className={(path === '/projects') ? "selected indicator" : 'indicator'}></span>
+          </Link>
         </span>
-        <span className={(path === '/connect') ? "selected" : ''}>
-          <Link to="/connect">Connect</Link>
+        <span>
+          <Link to="/connect">
+            Connect
+            <span className={(path === '/connect') ? "selected indicator" : 'indicator'}></span>
+          </Link>
         </span>
       </div>
       <div>

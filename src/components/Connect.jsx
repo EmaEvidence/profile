@@ -34,7 +34,7 @@ class Connect extends Component {
     } = this.state;
     return (
       <div className="profile">
-        <span className="heading">Connect</span>
+        {/* <span className="heading">Connect</span> */}
         <div className="text">
         <div>
           <span className="form-header">Send a Mail</span>
@@ -101,7 +101,7 @@ class Connect extends Component {
               <a href="https://twitter.com/EMMANUELALABI" target="new">Twitter</a>
             </span>
             <span>
-              <a href="https://www.linkedin.com/in/emmanuel-alabi-b0b98469/" target="new">Github</a>
+              <a href="https://github.com/EmaEvidence" target="new">Github</a>
             </span>
             <span>
               <a href="https://medium.com/@emaevidence" target="new">Blogs</a>

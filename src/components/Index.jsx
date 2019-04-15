@@ -20,6 +20,14 @@ class Index extends Component {
     this.closeMenu = this.closeMenu.bind(this);
   }
 
+  componentDidMount() {
+    window.addEventListener('resize', () => {
+      this.setState({
+        menuState: false
+      });
+    });
+  }
+
   toggleMenu() {
     this.setState({
       menuState: !this.state.menuState
@@ -59,7 +67,7 @@ class Index extends Component {
               (displayMenu === 'none') ? <i className="fas fa-bars"></i> : <i className="fas fa-times"></i>
             }
           </div>
-          <div className="mobile-links" onMouseLeave={this.closeMenu} onBlur={this.closeMenu} style={{ display: displayMenu }}>
+          <div className="mobile-links" onMouseLeave={this.closeMenu} style={{ display: displayMenu }}>
             <Menu {...this.props} />
           </div>
         </div>

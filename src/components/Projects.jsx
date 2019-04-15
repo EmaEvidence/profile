@@ -121,7 +121,7 @@ class Projects extends Component {
   render() {
     return (
       <div className="profile">
-        <span className="heading">Projects</span>
+        {/* <span className="heading">Projects</span> */}
         <div className="text skills">
           {
             this.loadProjects()

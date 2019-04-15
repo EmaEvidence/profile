@@ -33,7 +33,7 @@ class Links extends Component {
   render() {
     return (
       <div className="profile">
-        <span className="heading">Links</span>
+        {/* <span className="heading">Links</span> */}
         <div className="text">
           {this.state.bio}
         </div>

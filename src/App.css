@@ -60,14 +60,25 @@
     margin: 0px 10px;
     font-size: 20px;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .links > div > span > a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .links > div > span.selected {
-    text-decoration: underline;
+    /* text-decoration: underline; */
   }
 
   .links > div > span:hover {
-    text-decoration: underline;
+    /* text-decoration: underline; */
   }
 
   .hamburg, .mobile-links {
@@ -173,25 +184,24 @@
     width: 100%;
     z-index: 99;
     background: #ffffff;
-    height: 70px;
-    padding-top: 20px; 
+    height: 50px;
+    padding-top: 10px; 
   }
   .mobile-links > div > span {
-    margin: 30px 20px;
-    font-size: 20px;
+    margin: 20px 13px;
+    font-size: 14px;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobile-links > div > span > a {
+    display: flex;
+    flex-direction: column;
   }
 
   .mobile-links > div {
     margin: 5px 20px;
-  }
-
-  .mobile-links > div > span:hover, .links > div > span:hover {
-    text-decoration: underline;
-  }
-
-  .mobile-links > div > span.selected {
-    text-decoration: underline;
   }
 
   .profile > .text {
@@ -457,4 +467,19 @@ input::placeholder {
 
 .form-header {
   font-size: 18px;
+}
+
+span > a:hover .indicator {
+  width: 100%;
+}
+
+.indicator {
+  width: 0%;
+  height: 4px;
+  transition: width 0.4s;
+  background: #0038A8;
+}
+
+span > a > .indicator.selected {
+  width: 100%;
 }
