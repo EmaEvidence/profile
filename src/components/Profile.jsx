@@ -42,7 +42,6 @@ class Profile extends Component {
   render() {
     return (
       <div className="profile">
-        {/* <span className="heading">Profile</span> */}
         <div className="text">
           {this.state.bio}
         </div>

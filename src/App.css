@@ -460,9 +460,27 @@ input::placeholder {
 .connect-links > span > a {
   color: #ffffff;
 }
+.connect-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.connect-links > .link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-.connect-links > span > a:hover {
-  text-decoration: underline;
+.connect-links > .link > span {
+  width: 0%;
+  height: 1px;
+  background: #ffffff;
+  transition: width 0.4s;
+}
+
+.connect-links > .link:hover > span {
+  width: 100%;
 }
 
 .form-header {
@@ -475,7 +493,7 @@ span > a:hover .indicator {
 
 .indicator {
   width: 0%;
-  height: 4px;
+  height: 3px;
   transition: width 0.4s;
   background: #0038A8;
 }

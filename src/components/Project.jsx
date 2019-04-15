@@ -61,9 +61,6 @@ class Project extends Component {
               </a>
             </span>
           </span>
-          {/* <span className="projects">
-            <span className="value">{skill.tagline}</span>
-          </span> */}
         </div>
         <h1 className="project-logo">
           {

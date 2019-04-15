@@ -31,22 +31,6 @@ const Menu = (props) => {
           </Link>
         </span>
       </div>
-      <div>
-        
-      </div>
-      <div>
-        {/* <span className={(path === '/blogs') ? "selected" : ''}>
-          <Link to="/blogs">Blogs</Link>
-        </span> */}
-        {/* <span className={(path === '/connect') ? "selected" : ''}>
-          <Link to="/connect">Connect</Link>
-        </span> */}
-      </div>
-      <div>
-        {/* <span className={(path === '/mentorship') ? "selected" : ''}>
-          <Link to="/mentorship">Mentorship</Link>
-        </span> */}
-      </div>
     </Fragment>
   );
 };
