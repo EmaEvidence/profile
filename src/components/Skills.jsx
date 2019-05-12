@@ -56,6 +56,13 @@ class Skills extends Component {
           projects: 1
         },
         {
+          name: 'React Native',
+          level: 'proficient',
+          experience: 2,
+          src: 'https://res.cloudinary.com/damc3mj5u/image/upload/v1546954085/react_lkvpq6.png',
+          projects: 2
+        },
+        {
           name: 'GraphQL',
           level: 'proficient',
           experience: 3,

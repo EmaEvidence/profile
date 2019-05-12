@@ -106,6 +106,27 @@ class Projects extends Component {
           url: 'https://edozzier.com',
           repo: 'Third Party App'
         },
+        {
+          name: 'Motivate',
+          technologies: ['React Native', 'Redux'],
+          tagline: 'Productivity Tool',
+          url: 'Mobile App',
+          repo: 'Private Repo'
+        },
+        {
+          name: 'AuraHealth',
+          technologies: ['React Native', 'Redux', 'Firebase Function'],
+          tagline: 'Meditation App',
+          url: 'https://www.aurahealth.io/',
+          repo: 'Third Party App'
+        },
+        {
+          name: 'EA',
+          technologies: ['Reactjs', 'Redux', 'HTML', 'CSS'],
+          tagline: 'Personal Portal',
+          url: 'https://emaevidence.github.io/profile/connect',
+          repo: 'https://github.com/EmaEvidence/profile'
+        },
       ]
     };
     this.loadProjects = this.loadProjects.bind(this);
