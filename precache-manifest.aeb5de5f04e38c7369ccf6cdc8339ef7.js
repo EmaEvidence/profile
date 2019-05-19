@@ -12,23 +12,27 @@ self.__precacheManifest = [
     "url": "/profile/static/media/ForgottenFuturistCollegeRegular.0dae820b.ttf"
   },
   {
+    "revision": "52c9e2c23d0b497b562c9a3e909d463b",
+    "url": "/profile/static/media/ComicTSCNormal.52c9e2c2.ttf"
+  },
+  {
     "revision": "92700b96a6acba4945f6",
     "url": "/profile/static/js/runtime~main.92700b96.js"
   },
   {
-    "revision": "fd0974fa8ba205368d0d",
-    "url": "/profile/static/js/main.fd0974fa.chunk.js"
+    "revision": "970772602ce1f74d44ee",
+    "url": "/profile/static/js/main.97077260.chunk.js"
   },
   {
     "revision": "0b56793c97c1d8486016",
     "url": "/profile/static/js/1.0b56793c.chunk.js"
   },
   {
-    "revision": "fd0974fa8ba205368d0d",
-    "url": "/profile/static/css/main.8e1dd1fe.chunk.css"
+    "revision": "970772602ce1f74d44ee",
+    "url": "/profile/static/css/main.e13cbd5d.chunk.css"
   },
   {
-    "revision": "0696e5cdce49e68ea35c0a73b2160c42",
+    "revision": "a349c6a3e56bf21c2e3a4556e7c2f13d",
     "url": "/profile/index.html"
   }
 ];
