@@ -13,7 +13,7 @@ class Profile extends Component {
 
   componentDidMount() {
     const lastDisplayed = window.localStorage.getItem('displayed');
-    if ((Date.now - lastDisplayed) > 86400000 || lastDisplayed === null) {
+    if ((Date.now() - lastDisplayed) > 86400000 || lastDisplayed === null) {
       this.writeBio();
       window.localStorage.setItem('displayed', Date.now())
     } else {
