@@ -109,6 +109,10 @@ class Connect extends Component {
               <a href="https://medium.com/@emaevidence" target="new">Blogs</a>
               <span className="selected indicator" />
             </span>
+            <span className="link">
+              <a href="https://docs.google.com/document/d/1p1JrQShkEb6nax3L0er0uoEpIsbcgOhAbrrEb7YUKnE/edit?usp=sharing" target="new">CV</a>
+              <span className="selected indicator" />
+            </span>
           </div>
           <span className="email">Email: emmanuelalabi563@gmail.com</span>
         </div>

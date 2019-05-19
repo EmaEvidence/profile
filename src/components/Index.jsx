@@ -9,6 +9,9 @@ import Mentorship from './Mentorship';
 import Projects from './Projects';
 import Skills from './Skills';
 import Menu from './Menu';
+import Floater from './Floater';
+import { skills } from '../assets/skills';
+import { uniqueNumber } from '../utils/uniqueNumber';
 
 class Index extends Component {
   constructor(props) {
@@ -18,6 +21,7 @@ class Index extends Component {
     };
     this.toggleMenu = this.toggleMenu.bind(this);
     this.closeMenu = this.closeMenu.bind(this);
+    this.renderFloaters = this.renderFloaters.bind(this);
   }
 
   componentDidMount() {
@@ -40,11 +44,21 @@ class Index extends Component {
     });
   }
 
+  renderFloaters() {
+    return skills.map((skill, index) => {
+      const start = uniqueNumber(skills.length);
+      return <Floater key={skill.name} title={skill.name} index={index} start={start} />
+    });
+  }
+
   render() {
     const displayMenu = (this.state.menuState) ? 'block' : 'none';
     return (
       <div className="container">
         <div className="left">
+          {
+            (window.innerWidth > 768) && this.renderFloaters()
+          }
           <div className="image">
             <img src={ema} alt="" />
             <div className="name">

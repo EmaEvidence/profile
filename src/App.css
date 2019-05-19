@@ -8,6 +8,11 @@
   src: url('./assets/FuturaTEERegular.ttf')
 }
 
+@font-face {
+  font-family: "comic";
+  src: url('./assets/ComicTSCNormal.ttf')
+}
+
 .App {
   text-align: center;
   font-family: futurist;
@@ -28,6 +33,7 @@
     justify-content: center;
     flex-direction: column;
     color: #0038A8;
+    position: relative;
   }
   .right {
     background: #0038A8;
@@ -500,4 +506,22 @@ span > a:hover .indicator {
 
 span > a > .indicator.selected {
   width: 100%;
+}
+.floater {
+  position: absolute;
+  font-family: Comic;
+  font-weight: 600;
+  letter-spacing: 2px;
+  bottom: -2%;
+  text-transform: lowercase;
+  cursor: pointer;
+}
+
+.floater-animation {
+  animation: float 20s linear infinite normal;
+}
+
+@keyframes float {
+  0% { transform: rotate(0deg); opacity: 1; bottom: -2% }
+  100% { transform: rotate(360deg); opacity: 0; bottom: 100% }
 }
