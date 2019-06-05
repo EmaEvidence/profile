@@ -4,6 +4,10 @@ self.__precacheManifest = [
     "url": "/profile/static/media/ema.31ef00bb.png"
   },
   {
+    "revision": "2a3f91b12d0d3e93e4630420e39af80a",
+    "url": "/profile/static/media/crousel.2a3f91b1.png"
+  },
+  {
     "revision": "6901c65d6d291c5e2cbb9b44aaa905f7",
     "url": "/profile/static/media/FuturaTEERegular.6901c65d.ttf"
   },
@@ -20,19 +24,19 @@ self.__precacheManifest = [
     "url": "/profile/static/js/runtime~main.92700b96.js"
   },
   {
-    "revision": "7689fac470fc887a2a7e",
-    "url": "/profile/static/js/main.7689fac4.chunk.js"
+    "revision": "4e48671326e11056bf2f",
+    "url": "/profile/static/js/main.4e486713.chunk.js"
   },
   {
-    "revision": "0b56793c97c1d8486016",
-    "url": "/profile/static/js/1.0b56793c.chunk.js"
+    "revision": "b33d38055dc8a23da1c9",
+    "url": "/profile/static/js/1.b33d3805.chunk.js"
   },
   {
-    "revision": "7689fac470fc887a2a7e",
-    "url": "/profile/static/css/main.e13cbd5d.chunk.css"
+    "revision": "4e48671326e11056bf2f",
+    "url": "/profile/static/css/main.2b56811d.chunk.css"
   },
   {
-    "revision": "be50efe2202af774866cb2caa79a401f",
+    "revision": "e90bf7a48fbb6f37c3c2f5ea1fbe237d",
     "url": "/profile/index.html"
   }
 ];
