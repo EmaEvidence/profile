@@ -31,7 +31,8 @@ class Project extends Component {
   }
 
   render() {
-    const { project } = this.props;
+    const { project, isCarousel } = this.props;
+    // const 
     let { display } = this.state;
     return (
       <div

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Skill from './Skill';
 import { skills } from '../assets/skills';
+import Carousel from './Carousel';
 
 class Skills extends Component {
   constructor(props){
@@ -19,13 +20,20 @@ class Skills extends Component {
   }
 
   render() {
+    const { displayType } = this.props;
     return (
       <div className="profile">
-        <div className="text skills">
-          {
-            this.loadSkills()
-          }
-        </div>
+        {
+          (displayType === 'grid') ? (
+            <div className="text skills">
+              {
+                this.loadSkills()
+              }
+            </div>
+          ) : (
+            <Carousel data={skills} type={'skill'} />
+          )
+        }
       </div>
     );
   }

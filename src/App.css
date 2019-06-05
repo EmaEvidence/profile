@@ -139,6 +139,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
   }
   .name {
     display: none;
@@ -305,7 +306,7 @@
 .overlay {
   background: #ffffff;
   opacity: 1;
-  width: 150px;
+  width: 100%;
   height: 80%;
   position: absolute;
   z-index: 99999;
@@ -329,8 +330,8 @@
 }
 
 @keyframes skill {
-  0% { width: 150px; height: 0px; }
-  100% { width: 150px; height: 80%; }
+  0% { width: 100%; height: 0px; }
+  100% { width: 100%; height: 80%; }
 }
 
 .proficiency {
@@ -524,4 +525,96 @@ span > a > .indicator.selected {
 @keyframes float {
   0% { transform: rotate(0deg); opacity: 1; bottom: -2% }
   100% { transform: rotate(360deg); opacity: 0; bottom: 100% }
+}
+
+.right > span.switch {
+  display: flex;
+  position: absolute;
+  top: 10 !important;
+  right: 10 !important;
+  color: #fff;
+  justify-content: space-around;
+  align-items: center;
+}
+
+span.switch > img {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+span.switch > img:hover {
+  opacity: 0.7 !important;
+}
+
+.carousel {
+  width: 90%;
+  height: 85%;
+  position: relative;
+}
+
+.prev {
+  position: absolute;
+  left: -50px;
+  top: 50%;
+}
+
+.next {
+  position: absolute;
+  right: -50px;
+  top: 50%;
+}
+
+.carousel-card {
+  display: flex;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+.dots {
+  position: absolute;
+  bottom: -40px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  border-radius: 5px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.dot:hover {
+  opacity: 0.7;
+}
+
+
+.carousel-control {
+  height: 30px;
+  width: 20px;
+  cursor: pointer;
+}
+
+.carousel-control:hover {
+  opacity: 0.7;
+}
+
+.selected-dot {
+  width: 35px;
+  animation: selectedDot 0.3s linear 0s 1;
+}
+
+@keyframes selectedDot {
+  0% { width: 20px; }
+  100% { width: 35px; }
+}
+
+.carousel-card > .skill {
+  height: 100%;
+  width: 100%;
+  margin: 0 !important;
 }

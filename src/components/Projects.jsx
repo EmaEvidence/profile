@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 import Project from './Project';
+import Carousel from './Carousel';
 
 class Projects extends Component {
   constructor(props){
@@ -140,13 +141,20 @@ class Projects extends Component {
   }
 
   render() {
+    const { displayType } = this.props;
     return (
       <div className="profile">
-        <div className="text skills">
-          {
-            this.loadProjects()
-          }
-        </div>
+         {
+          (displayType === 'grid') ? (
+            <div className="text skills">
+              {
+                this.loadProjects()
+              }
+            </div>
+          ) : (
+            <Carousel data={this.state.projects} type={'project'} />
+          )
+        }
       </div>
     );
   }

@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Switch, Route, withRouter } from 'react-router-dom';
 import ema from '../assets/ema.png';
+import grid from '../assets/grid.png';
+import carousel from '../assets/crousel.png'
 import Profile from './Profile';
 import Blogs from './Blogs';
 import Links from './Links';
@@ -18,10 +20,12 @@ class Index extends Component {
     super(props);
     this.state = {
       menuState: false,
+      displayType: 'grid'
     };
     this.toggleMenu = this.toggleMenu.bind(this);
     this.closeMenu = this.closeMenu.bind(this);
     this.renderFloaters = this.renderFloaters.bind(this);
+    this.tooggleDisplay = this.tooggleDisplay.bind(this);
   }
 
   componentDidMount() {
@@ -51,8 +55,16 @@ class Index extends Component {
     });
   }
 
+  tooggleDisplay(displayType) {
+    this.setState({
+      displayType
+    });
+  }
+
   render() {
+    const { pathname } = this.props.location;
     const displayMenu = (this.state.menuState) ? 'block' : 'none';
+    const { displayType } = this.state;
     return (
       <div className="container">
         <div className="left">
@@ -86,14 +98,42 @@ class Index extends Component {
           </div>
         </div>
         <div className="right">
+          {
+            (pathname === '/projects' || pathname === '/skills') && 
+              (
+                <span className="switch" style={{ display: 'flex', position: 'absolute', top: 10, right: 10, color: '#fff', justifyContent: 'space-around', alignItems: 'center' }}>
+                  Change display type
+                  <img
+                    src={grid}
+                    alt="grid"
+                    style={{ width: '20px', height: '20px', margin: '0 5px', opacity: (displayType === 'grid') ? 1 : 0.5 }}
+                    onClick={() => {this.tooggleDisplay('grid')}}
+                  />
+                  <img
+                    src={carousel}
+                    alt="carousel"
+                    style={{ width: '30px', height: '20px', margin: '0 5px', opacity: (displayType === 'carousel') ? 1 : 0.5 }}
+                    onClick={() => {this.tooggleDisplay('carousel')}}
+                  />
+                </span>
+              )
+          }
           <Switch>
             <Route path="/" exact component={Profile} />
             <Route path="/blogs" exact component={Blogs} />
             <Route path="/connect" exact component={Connect} />
             <Route path="/links" exact component={Links} />
             <Route path="/mentorship" exact component={Mentorship} />
-            <Route path="/projects" exact component={Projects} />
-            <Route path="/skills" exact component={Skills} />
+            <Route
+              path="/projects"
+              exact
+              render={(props) => <Projects {...props} displayType={displayType} />}
+            />
+            <Route
+              path="/skills"
+              exact
+              render={(props) => <Skills {...props} displayType={displayType} />}
+            />
           </Switch>
         </div>
       </div>
