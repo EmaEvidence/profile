@@ -1,7 +1,7 @@
 {
   "main.css": "/profile/static/css/main.2b56811d.chunk.css",
-  "main.js": "/profile/static/js/main.4e486713.chunk.js",
-  "main.js.map": "/profile/static/js/main.4e486713.chunk.js.map",
+  "main.js": "/profile/static/js/main.0f997ff5.chunk.js",
+  "main.js.map": "/profile/static/js/main.0f997ff5.chunk.js.map",
   "static/js/1.b33d3805.chunk.js": "/profile/static/js/1.b33d3805.chunk.js",
   "static/js/1.b33d3805.chunk.js.map": "/profile/static/js/1.b33d3805.chunk.js.map",
   "runtime~main.js": "/profile/static/js/runtime~main.92700b96.js",
@@ -11,6 +11,6 @@
   "static/media/crousel.png": "/profile/static/media/crousel.2a3f91b1.png",
   "static/css/main.2b56811d.chunk.css.map": "/profile/static/css/main.2b56811d.chunk.css.map",
   "index.html": "/profile/index.html",
-  "precache-manifest.fce933deec3d6239a6c1d8676705182f.js": "/profile/precache-manifest.fce933deec3d6239a6c1d8676705182f.js",
+  "precache-manifest.90e84413ec12664fe0f9c26364e33c94.js": "/profile/precache-manifest.90e84413ec12664fe0f9c26364e33c94.js",
   "service-worker.js": "/profile/service-worker.js"
 }
