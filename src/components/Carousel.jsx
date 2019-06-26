@@ -13,6 +13,14 @@ class Carousel extends Component {
     this.generateDots = this.generateDots.bind(this);
     this.handleChange = this.handleChange.bind(this);
   }
+
+  componentDidMount() {
+    const interval = setInterval(this.handleChange, 5000, 'next');
+    this.setState({
+      interval
+    });
+  }
+
   generateDots() {
     const { data } = this.props;
     const { current } = this.state;
@@ -59,6 +67,10 @@ class Carousel extends Component {
       current
     });
     
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.state.interval);
   }
 
   render() {
