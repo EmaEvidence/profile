@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Switch, Route, withRouter } from 'react-router-dom';
 import ema from '../assets/ema.png';
+import ema2 from '../assets/ema.jpg';
 import grid from '../assets/grid.png';
 import carousel from '../assets/crousel.png'
 import Profile from './Profile';
@@ -72,7 +73,7 @@ class Index extends Component {
             (window.innerWidth > 768) && this.renderFloaters()
           }
           <div className="image">
-            <img src={ema} alt="" />
+            <img src={ema2} alt="" />
             <div className="name">
               <span className="handle">ea</span>
               <span className="title">Fullstack Software Engineer</span>
