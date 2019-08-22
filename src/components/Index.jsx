@@ -11,6 +11,7 @@ import Mentorship from './Mentorship';
 import Projects from './Projects';
 import Skills from './Skills';
 import Menu from './Menu';
+import PlayGround from './PlayGround';
 import Floater from './Floater';
 import { skills } from '../assets/skills';
 import { uniqueNumber } from '../utils/uniqueNumber';
@@ -134,6 +135,7 @@ class Index extends Component {
               exact
               render={(props) => <Skills {...props} displayType={displayType} />}
             />
+              <Route path="/playground" exact component={PlayGround} />
           </Switch>
         </div>
       </div>

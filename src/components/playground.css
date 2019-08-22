@@ -1,0 +1,84 @@
+.button-wrapper {
+    /* border: 10px solid red; */
+    border: 1px solid red;
+    width: 300px;
+    height: 120px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.button {
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    border: 0;
+    background: #2d2d2d;
+    color: #ffffff;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0px 2px 5px 0px #888888;
+    z-index: 9;
+}
+
+.circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    position: absolute;
+}
+
+.one {
+    background: green;
+    top: 60px;
+    animation: one 0.5s linear 1;
+}
+
+@keyframes one {
+    0% { top: 60px }
+    100% { top: 0px }
+}
+
+/* .two {
+    background: blue;
+    left: 30px;
+    animation: two 0.5s linear 1;
+}
+
+@keyframes two {
+    0% { left: 60px }
+    100% { left: 0px }
+}
+
+.three {
+    background: yellow;
+    bottom: 0px;
+    animation: three 0.5s linear 1;
+}
+
+@keyframes three {
+    0% { bottom: 60px }
+    100% { bottom: 0px }
+}
+
+.four {
+    background: red;
+    right: 30px;
+    animation: four 0.5s linear 1;
+}
+
+@keyframes four {
+    0% { right: 60px }
+    100% { right: 0px }
+} */
+
+.button:hover {
+    /* color: blue; */
+    /* box-shadow: 0px 2px 5px #888888; */
+}
+
+.button:active {
+    box-shadow: 0px 0px 5px 1px #888888 inset;
+}
