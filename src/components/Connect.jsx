@@ -1,5 +1,28 @@
 import React, { Component } from 'react';
 
+const links = [
+  {
+    name: 'Facebook',
+    url: 'https://www.facebook.com/ema.evidence'
+  },
+  {
+    name: 'Twitter',
+    url: 'https://twitter.com/EMMANUELALABI'
+  },
+  {
+    name: 'Github',
+    url: 'https://github.com/EmaEvidence'
+  },
+  {
+    name: 'Blog',
+    url: 'https://medium.com/@emaevidenc'
+  },
+  {
+    name: 'Resume',
+    url: 'https://docs.google.com/document/d/1p1JrQShkEb6nax3L0er0uoEpIsbcgOhAbrrEb7YUKnE/edit?usp=sharing'
+  }
+]
+
 class Connect extends Component {
   constructor(props){
     super(props);
@@ -89,32 +112,16 @@ class Connect extends Component {
         </div>
         <div>
           <div className="connect-links">
-            <span className="link">
-              <a href="https://www.facebook.com/ema.evidence" target="new">Facebook</a>
-              <span className="selected indicator" />
-            </span>
-            <span className="link">
-              <a href="https://www.linkedin.com/in/emmanuel-alabi-b0b98469/" target="new">LinkedIn</a>
-              <span className="selected indicator" />
-            </span>
-            <span className="link">
-              <a href="https://twitter.com/EMMANUELALABI" target="new">Twitter</a>
-              <span className="selected indicator" />
-            </span>
-            <span className="link">
-              <a href="https://github.com/EmaEvidence" target="new">Github</a>
-              <span className="selected indicator" />
-            </span>
-            <span className="link">
-              <a href="https://medium.com/@emaevidence" target="new">Blogs</a>
-              <span className="selected indicator" />
-            </span>
-            <span className="link">
-              <a href="https://docs.google.com/document/d/1p1JrQShkEb6nax3L0er0uoEpIsbcgOhAbrrEb7YUKnE/edit?usp=sharing" target="new">CV</a>
-              <span className="selected indicator" />
-            </span>
+            {
+              links.map(item => (
+                <span className="link">
+                  <a href={item.url} target="new">{item.name}</a>
+                  <span className="selected indicator" />
+                </span>
+              ))
+            }
           </div>
-          <span className="email">Email: emmanuelalabi563@gmail.com</span>
+          <span className="email">Email: <a href="mailto:emmanuelalabi563@gmail.com" target="blank">emmanuelalabi563@gmail.com</a></span>
         </div>
         </div>
       </div>

@@ -6,7 +6,7 @@ class Profile extends Component {
     super(props);
     this.state = {
       bio: '',
-      defaultBio: 'Welcome, I am Emmanuel Alabi. You can call me ea. I am a fullstack Solution Provider(Software Engineer) with years of experience providing full stack web Solutions using Javascript and Nodejs. I follow TDD principles while programming and ensure that my code is properly optimised. I have a good eye for design and I can convert a design/mockup into an application. I am open to new ideas and a quick learner. I am a team player with great stakeholder management skills. If I am not coding, I am surfing the internet for Innovative Ideas, spending time with family, drawing or watching Sci Fi movies at play speed of 2. I also like passing down what I have learnt over time through direct mentorship. Master the logic, for languages are tools'
+      defaultBio: 'Welcome, you can call me Evidence. I am a Full stack Software Engineer with more than 4 years of professional experience providing full stack optimised web solutions using Javascript(MERN Stack), I am also fluent in PHP, Python(Flask) & Dart(Flutter). I am open to opportunities as an individual contributor in an engineering team as I hone my skills towards team leadership. If I am not coding, I am surfing the internet for Innovative Ideas or building one, spending time with family, drawing or watching Sci Fi movies at play speed of 2. I pass down what I have learnt over time through direct mentorship. \n Master the logic, for languages are tools'
     };
     this.writeBio = this.writeBio.bind(this);
   }

@@ -16,6 +16,16 @@ import Floater from './Floater';
 import { skills } from '../assets/skills';
 import { uniqueNumber } from '../utils/uniqueNumber';
 
+const MyDetails = () => {
+  return (
+    <div className="name">
+      <span className="handle">Emmanuel Alabi</span>
+      <span className="title">Fullstack Software Engineer</span>
+      <span className="tagline"><i>making products Users love</i></span>
+    </div>
+  );
+}
+
 class Index extends Component {
   constructor(props) {
     super(props);
@@ -69,22 +79,11 @@ class Index extends Component {
     return (
       <div className="container">
         <div className="left">
-          {
-            (window.innerWidth > 768) && this.renderFloaters()
-          }
           <div className="image">
             <img src={ema} alt="" />
-            <div className="name">
-              <span className="handle">ea</span>
-              <span className="title">Fullstack Software Engineer</span>
-              <span className="tagline"><i>making products Users love</i></span>
-            </div>
+            <MyDetails />
           </div>
-          <div className="name">
-            <span className="handle">ea</span>
-            <span className="title">Fullstack Software Engineer</span>
-            <span className="tagline"><i>making products Users love</i></span>
-          </div>
+          <MyDetails />
           <hr />
           <div className="links">
             <Menu {...this.props} />

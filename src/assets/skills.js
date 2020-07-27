@@ -2,7 +2,7 @@ export const skills = [
   {
     name: 'javascript',
     level: 'expert',
-    experience: 3,
+    experience: 4,
     src: 'https://res.cloudinary.com/damc3mj5u/image/upload/v1546954084/JScript_mzwyx2.png',
     projects: 14
   },
@@ -25,34 +25,27 @@ export const skills = [
     level: 'expert',
     experience: 3,
     src: 'https://res.cloudinary.com/damc3mj5u/image/upload/v1546954085/react_lkvpq6.png',
-    projects: 7
-  },
-  {
-    name: 'Meteor',
-    level: 'proficient',
-    experience: 2,
-    src: 'https://res.cloudinary.com/damc3mj5u/image/upload/v1546955345/logo-meteor_rp3glq.png',
-    projects: 1
-  },
-  {
-    name: 'vuejs with vuex',
-    level: 'expert',
-    experience: 2,
-    src: 'https://res.cloudinary.com/damc3mj5u/image/upload/v1546954084/1200px-Vue.js_Logo_2.svg_oh7kk7.png',
-    projects: 2
-  },
-  {
-    name: 'PHP',
-    level: 'proficient',
-    experience: 3,
-    src: 'https://res.cloudinary.com/damc3mj5u/image/upload/v1546954085/php_mlaodn.png',
-    projects: 1
+    projects: 9
   },
   {
     name: 'React Native',
     level: 'proficient',
     experience: 2,
     src: 'https://res.cloudinary.com/damc3mj5u/image/upload/v1546954085/react_lkvpq6.png',
+    projects: 2
+  },
+  {
+    name: 'Flutter',
+    level: 'proficient',
+    experience: '~1',
+    src: 'https://res.cloudinary.com/damc3mj5u/image/upload/v1595889028/flutter_x7dda6.png',
+    projects: 3
+  },
+  {
+    name: 'vuejs with vuex',
+    level: 'expert',
+    experience: 2,
+    src: 'https://res.cloudinary.com/damc3mj5u/image/upload/v1546954084/1200px-Vue.js_Logo_2.svg_oh7kk7.png',
     projects: 2
   },
   {
@@ -63,6 +56,13 @@ export const skills = [
     projects: 1
   },
   {
+    name: 'Apollo Client',
+    level: 'proficient',
+    experience: 1,
+    src: 'https://res.cloudinary.com/damc3mj5u/image/upload/v1546954145/apollo_nopumb.svg',
+    projects: 1
+  },
+  {
     name: 'wordpress',
     level: 'expert',
     experience: 3,
@@ -70,24 +70,10 @@ export const skills = [
     projects: 4
   },
   {
-    name: 'TDD',
-    level: 'expert',
-    experience: 3,
-    src: 'https://res.cloudinary.com/damc3mj5u/image/upload/v1546954086/TDD_ikupjm.png',
-    projects: 8
-  },
-  {
-    name: 'Apollo',
-    level: 'proficient',
-    experience: 1,
-    src: 'https://res.cloudinary.com/damc3mj5u/image/upload/v1546954145/apollo_nopumb.svg',
-    projects: 1
-  },
-  {
-    name: 'jQuery',
+    name: 'PHP',
     level: 'proficient',
     experience: 3,
-    src: 'https://res.cloudinary.com/damc3mj5u/image/upload/v1546954084/jquery_hi3cmz.gif',
+    src: 'https://res.cloudinary.com/damc3mj5u/image/upload/v1546954085/php_mlaodn.png',
     projects: 1
   },
   {

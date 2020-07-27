@@ -149,7 +149,7 @@
     flex-direction: column;
     justify-content: flex-start;
     margin-left: 10px;
-    justify-self: flex-start;
+    align-items: flex-start;
   }
   .name > .handle {
     font-size: 50px;
@@ -461,6 +461,10 @@ input::placeholder {
 .connect-links > span, .email {
   margin: 10px;
   font-size: 16px;
+  color: #ffffff;
+}
+
+.email > a {
   color: #ffffff;
 }
 
